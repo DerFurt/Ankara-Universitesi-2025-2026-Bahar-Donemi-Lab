@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+int main()
+{
+    int i = 1;
+    int num = 0;
+    int sum = 0;
+
+    scanf("%d", &num);
+    
+    while (i<num)
+    {
+        
+        if (num % i == 0)
+        {
+            printf("%d ", i);
+            sum = sum + i;
+        }
+        
+
+        i++;
+        
+    }
+    
+    printf("%d ", sum);
+    if (sum == num)
+    {
+        printf("1");
+    }
+    else if (sum > num)
+    {
+        printf("2");
+    }
+    else
+    {
+        printf("3");
+    }
+    
+    return 0;
+
+}
