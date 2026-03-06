@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int num;
+
+    scanf("%d", &num);
+    int divisor = 2;
+
+    while (num > 1) {
+        int count = 0;
+        
+        while (num % divisor == 0) {
+            num = num / divisor;
+            
+            count++; 
+        }
+        
+        if (count > 0) {
+            
+            printf("%d %d ", divisor, count); 
+        }
+        
+        divisor++;
+    }
+
+    return 0;
+}
